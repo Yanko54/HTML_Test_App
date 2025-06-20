@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 0px 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+/* -----------------------
+ヘッダー
+----------------------- */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 8px;
+    border-bottom: solid 2px #86868a;
+}
+
+.header ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header ul :hover {
+    opacity: 0.8;
+}
+
+/* -----------------------
+セクション
+----------------------- */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.section-title {
+    /* border-bottom: solid 1px #383e45; */
+    margin-top: 64px;
+}
+
+/* -----------------------
+プロフィール
+----------------------- */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.profile-img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 18%;
+}
+
+.profile-detail {
+    display: flex;
+    flex-direction: column;
+    line-height: 180%;
+    gap: 16px;
+}
+
+/* -----------------------
+趣味
+----------------------- */
+
+.interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.interest_img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.interest_title {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    padding-bottom: 16px;
+    color: #86868a;
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 160%;
+    padding: 24px;
+}
+
+/* -----------------------
+フッター
+----------------------- */
+
+.fotter {
+    text-align: end;
+    font-size: smaller;
+    margin-top: 32px;
+}
